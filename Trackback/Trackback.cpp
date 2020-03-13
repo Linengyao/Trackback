@@ -29,6 +29,7 @@ int main()
 		cout << "图像载入失败" << endl;
 		return 0;
 	}
+
 	cvtColor(srcMat, gryMat, CV_BGR2GRAY);
 	imshow(window_name, gryMat);
 	createTrackbar("threshold", 
